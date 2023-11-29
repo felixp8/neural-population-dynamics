@@ -1,0 +1,5 @@
+_target_: lfads_torch.datamodules.BasicDataModule
+data_paths:
+  - /home/fpei2/interp/neural-population-dynamics/datasets/murraytwoarea/data/murray_rec_pfc.h5
+batch_size: 256
+use_ext_input: False
