@@ -45,6 +45,7 @@ lastly there are a few metrics I use
 * `bwd_input_r2` - $R^2$ of linear regression from true inputs to model inputs
 * `input_procrustes_lin` - non-regularized procrustes angular distance metric between model and true inputs. lower is better
 * `input_procrustes_rot` - regularized procrustes angular distance metric between model and true inputs. lower is better
+variants of the metrics called `st_{metric_name}` are computed on single trials and averaged across trials, instead of on all trials concatenated together. this was done because capturing condition differences well, but not precise timings of inputs, would still result in pretty good concatenated scores
 
 ## TODOS
 * basic dynamics analyses, like fixed points comparisons or DSA (doable)
